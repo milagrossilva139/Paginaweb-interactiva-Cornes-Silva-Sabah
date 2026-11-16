@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0xp;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(220, 233, 243);
+    color: black;
+    padding: 20px;
+}
+
+.flexbox{
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section{
+    background-color:#fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+/*ENCABEZADO*/
+.encabezado{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.menu{
+    display: flex;
+    background-color: black;
+    padding: 20px;  
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a{
+    color: ghostwhite;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.menu ul li a:hover{
+    color: grey;
+}
+
+#text{
+    font-weight: bold;
+}
+
+/*CAJAS*/
+.caja-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.caja {
+    flex: 1 1 250px;
+    background: #052144;
+    border-radius: 10px;
+    overflow: hidden;    /* Oculta cualquier contenido que se salga del borde*/
+    transition: transform 0.2s;
+}
+
+.caja:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px #141664;
+}
+
+.caja-img{
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.caja-img img{
+    height: 370px;
+    width: 350px;
+    border-radius: 6px;
+}
+
+.caja-body {
+    padding: 20px;
+}
+
+.caja-body h3 {
+    margin-bottom: 10px;
+    color: ghostwhite;
+}
+
+.caja-body p {
+    font-size: 0.95rem;
+    color: #c9c9c9;
+    line-height: 1.5;
+}
+
+.caja-body button {
+    margin-top: 15px;
+    background: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.caja-body button a{
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+.caja-body button:hover {
+    background: #5e5e5e;
+}
+
+.columnas-container{
+    display: flex;
+    gap: 20px;
+}
+
+.flex-item{
+    background: #052144;
+    color: #fff;
+    border-radius: 6px;
+    padding: 15px;
+    transition: transform 0.2s;
+    flex: 1;
+}
+
+.flex-item p a{
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+.flex-item p a:hover{
+    text-decoration: underline;
+}
+
+.flex-item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px #141664;
+}
